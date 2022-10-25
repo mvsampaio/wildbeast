@@ -24,6 +24,7 @@ a {
 
 img {
   max-width: 100%;
+  width: 100%;
   display: block;
   border-radius: 5px;
 }
@@ -38,6 +39,8 @@ img {
     "sidenav content anuncios"
     "footer footer footer";
 }
+
+/* Header */
 
 .header {
   grid-area: header;
@@ -75,6 +78,8 @@ img {
   margin-left: 30px;
 }
 
+/* Sidenav */
+
 .sidenav {
   grid-area: sidenav;
   background: #fafbfc;
@@ -96,6 +101,8 @@ img {
 .sidenav li a:hover {
   background: #b07dfb;
 }
+
+/* Content */
 
 .content {
   grid-area: content;
@@ -120,6 +127,8 @@ img {
   align-self: end;
 }
 
+/* Estilos content */
+
 p {
   font-size: 1.2em;
   line-height: 1.6;
@@ -130,6 +139,8 @@ p {
 .informacoes p + p {
   margin-top: 30px;
 }
+
+/* Título */
 
 .titulo {
   color: #b07dfb;
@@ -185,6 +196,41 @@ p {
   top: 2px;
 }
 
+.destaque {
+  font-size: 0.875em;
+  color: #b07dfb;
+  max-width: 16em;
+}
+
+.citacao,
+.atributos {
+  align-self: start;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+.citacao p {
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.atributos li {
+  color: white;
+  font-family: Courier, monospace;
+  font-size: 1.125em;
+  padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
+}
+
 /* Anuncios */
 
 .anuncios {
@@ -195,6 +241,8 @@ p {
   padding: 30px;
   gap: 30px;
 }
+
+/* Footer */
 
 .footer {
   grid-area: footer;
